@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Xu28@yakumo.suki
+    url: jdbc:mysql://127.0.0.1/selldb?characterEncoding=utf-8
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  servlet:
+    context-path: /wechat-sell
