@@ -4,59 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a26644b9-a74b-43fa-8999-bb0cb45580c3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a26644b9-a74b-43fa-8999-bb0cb45580c3/storage_v2/_src_/schema/selldb.UE__yQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/VO/ProductInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/VO/ProductVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/VO/ResultVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/WechatSellApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/BuyerProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ProductStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/repository/ProductCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/repository/ProductInfoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/WechatSellApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/repository/Impl/CategoryServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/repository/ProductCategoryRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductionServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/VO/ProductInfoVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/VO/ProductVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/VO/ResultVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/WechatSellApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/BuyerProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/dataobject/ProductCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/dataobject/ProductInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ProductStatusEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/repository/ProductCategoryRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/repository/ProductInfoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/CategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/CategoryServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/mingxun/WechatSellApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/mingxun/repository/Impl/CategoryServiceImplTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/mingxun/repository/ProductCategoryRepositoryTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/mingxun/service/Impl/ProductionServiceImplTest.class" afterDir="false" />
+    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="-- finish category dao, service&#10;-- finish product dao, service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/BuyerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/BuyerProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/repository/ProductInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/repository/ProductInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/repository/Impl/CategoryServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/CategoryServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductionServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/controller/BuyerProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/BuyerProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/dataobject/ProductInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/dataobject/ProductInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/repository/ProductInfoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/repository/ProductInfoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mingxun/repository/Impl/CategoryServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mingxun/service/Impl/ProductionServiceImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,15 +46,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
-        <option value="Enum" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.7.18/spring-data-commons-2.7.18.jar!/org/springframework/data/domain/PageRequest.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.7.18/spring-data-commons-2.7.18.jar!/org/springframework/data/domain/Sort.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -107,6 +74,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2j2ICTxeB1eradIQmUckPKcG2Z6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -120,6 +90,12 @@
     "JUnit.ProductCategoryRepositoryTest.findById.executor": "Run",
     "JUnit.ProductCategoryRepositoryTest.findListTest.executor": "Run",
     "JUnit.ProductCategoryRepositoryTest.saveTest.executor": "Run",
+    "JUnit.ProductInfoRepositoryTest.findByProductStatus.executor": "Run",
+    "JUnit.ProductInfoRepositoryTest.saveTest.executor": "Run",
+    "JUnit.ProductServiceImplTest.executor": "Run",
+    "JUnit.ProductServiceImplTest.findAll.executor": "Debug",
+    "JUnit.ProductServiceImplTest.findOne.executor": "Run",
+    "JUnit.ProductServiceImplTest.findUpAll.executor": "Run",
     "JUnit.ProductionServiceImplTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -148,61 +124,17 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mingxun.service.Impl" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mingxun.repository" />
       <recent name="com.mingxun.service.Impl" />
       <recent name="com.mingxun.repository.Impl" />
-      <recent name="com.mingxun.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductionServiceImplTest">
-    <configuration name="CategoryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.repository.Impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.repository.Impl" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.repository.Impl.CategoryServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryServiceImplTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.repository.Impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.repository.Impl" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.repository.Impl.CategoryServiceImplTest" />
-      <option name="METHOD_NAME" value="findOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductCategoryRepositoryTest.findByCategoryTypeInTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.repository.ProductCategoryRepositoryTest" />
-      <option name="METHOD_NAME" value="findByCategoryTypeInTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductionServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.WechatSellApplication">
+    <configuration name="ProductServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <extension name="coverage">
         <pattern>
@@ -211,8 +143,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductionServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImplTest.findOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="findOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImplTest.findUpAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="findUpAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,17 +200,23 @@
     <configuration name="WechatSellApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mingxun.WechatSellApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductionServiceImplTest" />
         <item itemvalue="Spring Boot.WechatSellApplication" />
-        <item itemvalue="JUnit.CategoryServiceImplTest" />
-        <item itemvalue="JUnit.CategoryServiceImplTest.findOne" />
-        <item itemvalue="JUnit.ProductCategoryRepositoryTest.findByCategoryTypeInTest" />
+        <item itemvalue="JUnit.ProductServiceImplTest.findOne" />
+        <item itemvalue="JUnit.ProductServiceImplTest.findAll" />
+        <item itemvalue="JUnit.ProductServiceImplTest" />
+        <item itemvalue="JUnit.ProductServiceImplTest.findUpAll" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +240,25 @@
       <workItem from="1720579947418" duration="1100000" />
       <workItem from="1720581053829" duration="211000" />
       <workItem from="1720581267029" duration="1516000" />
-      <workItem from="1720582796187" duration="13214000" />
+      <workItem from="1720582796187" duration="29453000" />
     </task>
+    <task id="LOCAL-00001" summary="-- finish category dao, service&#10;-- finish product dao, service">
+      <option name="closed" value="true" />
+      <created>1720599567774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720599567774</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-- finish category dao, service&#10;-- finish product dao, service" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- finish category dao, service&#10;-- finish product dao, service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

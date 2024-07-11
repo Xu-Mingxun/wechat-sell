@@ -5,5 +5,5 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductInfoRepository extends JpaRepository<ProductInfo, String> {
-    List<ProductInfo> findByProductStatus(Integer status);
+    List<ProductInfo> findByProductStatus(Integer productStatus);
 }

@@ -1,7 +1,6 @@
-package com.mingxun.repository.Impl;
+package com.mingxun.service.Impl;
 
 import com.mingxun.dataobject.ProductCategory;
-import com.mingxun.service.Impl.CategoryServiceImpl;
 import java.util.Arrays;
 import java.util.List;
 import javax.transaction.Transactional;
