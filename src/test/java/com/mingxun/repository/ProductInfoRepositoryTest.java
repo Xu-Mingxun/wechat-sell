@@ -42,4 +42,5 @@ class ProductInfoRepositoryTest {
         System.out.println(productInfoList);
         Assert.assertNotEquals(0, productInfoList.size());
     }
+
 }
