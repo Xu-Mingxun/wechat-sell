@@ -27,7 +27,7 @@ class ProductServiceImplTest {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId("123457");
         productInfo.setProductName("大米粥");
-        productInfo.setProductPrice(new BigDecimal(3.2));
+        productInfo.setProductPrice(new BigDecimal(3.9));
         productInfo.setProductStock(100);
         productInfo.setProductDescription("不好吃");
         productInfo.setProductIcon("https://xxx.jpg");
@@ -55,6 +55,7 @@ class ProductServiceImplTest {
     @Test
     public void findOne() {
         ProductInfo productInfo = productService.findOne("123457");
+        System.out.println(productInfo);
         Assert.assertEquals("123457", productInfo.getProductId());
     }
 }

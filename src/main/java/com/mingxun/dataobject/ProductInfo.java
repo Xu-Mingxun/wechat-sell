@@ -1,5 +1,6 @@
 package com.mingxun.dataobject;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,7 +10,9 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "product_info")
-public class ProductInfo {
+public class ProductInfo implements Serializable {
+
+    private static final long serialVersionUID = 1808023597601707381L;
 
     @Id
     private String productId;

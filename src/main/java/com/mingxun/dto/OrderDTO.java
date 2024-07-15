@@ -1,15 +1,22 @@
 package com.mingxun.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mingxun.dataobject.OrderDetail;
 import com.mingxun.enums.OrderStatusEnum;
 import com.mingxun.enums.PayStatusEnum;
+import com.mingxun.utils.serializer.Date2LongSerializer;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.Id;
 import lombok.Data;
 
 @Data
+// @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+// @JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
     /* 订单id*/
     private String orderId;
@@ -36,9 +43,11 @@ public class OrderDTO {
     private Integer payStatus;
 
     /* 创建时间*/
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
     /* 更新时间*/
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
