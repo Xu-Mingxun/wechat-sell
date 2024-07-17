@@ -13,3 +13,8 @@ spring:
 server:
   servlet:
     context-path: /wechat-sell
+logging:
+  level:
+    com.mingxun.dataobject.mapper: trace
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

@@ -17,21 +17,16 @@ import com.mingxun.service.ProductService;
 import com.mingxun.utils.KeyUtil;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.rmi.server.ServerCloneException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.jaxb.SpringDataJaxb;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -67,7 +62,7 @@ public class OrderServiceImpl  implements OrderService {
                     .multiply(new BigDecimal(orderDetail.getProductQuantity()))
                     .add(orderAmount);
 
-            //订单详情入库
+            //订单详情入数据库
             orderDetail.setDetailId(KeyUtil.genUniqueKey());
             orderDetail.setOrderId(orderId);
             BeanUtils.copyProperties(productInfo, orderDetail);
@@ -99,7 +94,7 @@ public class OrderServiceImpl  implements OrderService {
     public OrderDTO findOne(String orderId) {
 
         if (!orderMasterRepository.findById(orderId).isPresent()) {
-            throw new SellException(ResultEnum.ORDER_NOT_EXIT);
+            throw new SellException(ResultEnum.ORDER_NOT_EXIST);
         }
         OrderMaster orderMaster = orderMasterRepository.findById(orderId).get();
 
