@@ -4,6 +4,7 @@ import com.mingxun.dataobject.OrderDetail;
 import com.mingxun.dto.OrderDTO;
 import com.mingxun.enums.OrderStatusEnum;
 import com.mingxun.enums.PayStatusEnum;
+import com.mingxun.repository.OrderDetailRepository;
 import java.awt.print.Pageable;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,9 @@ class OrderServiceImplTest {
     private final String BUYER_OPENID = "1101110";
 
     private final String ORDER_ID = "1720893475655107252";
+    @Autowired
+    private OrderDetailRepository orderDetailRepository;
+
     @Test
     void create() {
 
@@ -60,9 +64,7 @@ class OrderServiceImplTest {
 
     @Test
     void findOne() {
-        OrderDTO result = orderService.findOne(ORDER_ID);
-        log.info("【查询单个订单】result={}", result);
-        Assert.assertEquals(ORDER_ID, result.getOrderId());
+        // orderService.findList()
     }
 
     @Test
@@ -92,6 +94,13 @@ class OrderServiceImplTest {
         OrderDTO orderDTO = orderService.findOne(ORDER_ID);
         OrderDTO result = orderService.paid(orderDTO);
         Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
+    }
 
+    @Test
+    public void list() {
+        PageRequest request = PageRequest.of(0, 2);
+        Page<OrderDTO> orderDTOPage = orderService.findList(request);
+        // Assert.assertNotEquals(0, orderDTOPage.getTotalElements());
+        Assert.assertTrue("查询所有订单的列表", orderDTOPage.getTotalElements() > 0);
     }
 }

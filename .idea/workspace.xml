@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="-- 买家订单部分完成&#10;-- 视频第六章结束">
+    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/WechatSellApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/WechatSellApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/WechatSellApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/WechatSellApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/controller/BuyerProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/BuyerProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/OrderServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +38,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,9 +93,10 @@
     "JUnit.OrderMasterRepositoryTest.saveTest.executor": "Run",
     "JUnit.OrderServiceImplTest.cancel.executor": "Run",
     "JUnit.OrderServiceImplTest.create.executor": "Run",
-    "JUnit.OrderServiceImplTest.findList.executor": "Debug",
+    "JUnit.OrderServiceImplTest.findList.executor": "Run",
     "JUnit.OrderServiceImplTest.findOne.executor": "Run",
     "JUnit.OrderServiceImplTest.finish.executor": "Run",
+    "JUnit.OrderServiceImplTest.list.executor": "Debug",
     "JUnit.OrderServiceImplTest.paid.executor": "Run",
     "JUnit.ProductCategoryMapperTest.deleteByCategoryType.executor": "Debug",
     "JUnit.ProductCategoryMapperTest.findByCategoryType.executor": "Run",
@@ -126,7 +124,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.WechatSellApplication.executor": "Debug",
+    "Spring Boot.WechatSellApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
@@ -137,10 +135,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -161,7 +159,39 @@
       <recent name="com.mingxun.repository.Impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductCategoryMapperTest.insertByObject">
+  <component name="RunManager" selected="Spring Boot.WechatSellApplication">
+    <configuration name="OrderServiceImplTest.findList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="findList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImplTest.list" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.OrderServiceImplTest" />
+      <option name="METHOD_NAME" value="list" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductCategoryMapperTest.deleteByCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <extension name="coverage">
@@ -194,38 +224,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCategoryMapperTest.selectByCategoryName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.dataobject.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.dataobject.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.dataobject.mapper.ProductCategoryMapperTest" />
-      <option name="METHOD_NAME" value="selectByCategoryName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductCategoryMapperTest.updateByCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.dataobject.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.dataobject.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.dataobject.mapper.ProductCategoryMapperTest" />
-      <option name="METHOD_NAME" value="updateByCategoryType" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductCategoryMapperTest.updateByObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <extension name="coverage">
@@ -242,13 +240,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WechatSellApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mingxun.WechatSellApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceImplTest.list" />
+        <item itemvalue="JUnit.OrderServiceImplTest.findList" />
         <item itemvalue="JUnit.ProductCategoryMapperTest.insertByObject" />
         <item itemvalue="JUnit.ProductCategoryMapperTest.deleteByCategoryType" />
         <item itemvalue="JUnit.ProductCategoryMapperTest.updateByObject" />
-        <item itemvalue="JUnit.ProductCategoryMapperTest.updateByCategoryType" />
-        <item itemvalue="JUnit.ProductCategoryMapperTest.selectByCategoryName" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +284,8 @@
       <workItem from="1720924609901" duration="1168000" />
       <workItem from="1720925791111" duration="12158000" />
       <workItem from="1720948682565" duration="8907000" />
-      <workItem from="1721003751173" duration="12153000" />
+      <workItem from="1721003751173" duration="82627000" />
+      <workItem from="1723077339918" duration="2715000" />
     </task>
     <task id="LOCAL-00001" summary="-- finish category dao, service&#10;-- finish product dao, service">
       <option name="closed" value="true" />
@@ -345,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721008434314</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁">
+      <option name="closed" value="true" />
+      <created>1721220837229</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721220837229</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,21 +382,12 @@
     <MESSAGE value="-- 课程看完6-2" />
     <MESSAGE value="-- 买家订单service完成" />
     <MESSAGE value="-- 买家订单部分完成&#10;-- 视频第六章结束" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- 买家订单部分完成&#10;-- 视频第六章结束" />
+    <MESSAGE value="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/OrderServiceImplTest.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/controller/BuyerOrderController.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java</url>
           <line>30</line>
@@ -399,9 +404,9 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mingxun/dataobject/mapper/ProductCategoryMapperTest.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/WechatSellApplication.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
