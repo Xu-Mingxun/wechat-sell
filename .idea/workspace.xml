@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁">
+    <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="--- 9.3 freemaker有问题">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/OrderServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/OrderServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/exception/SellException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/exception/SellException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mingxun/service/Impl/OrderServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mingxun/service/Impl/OrderServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,65 +86,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CategoryServiceImplTest.executor": "Run",
-    "JUnit.CategoryServiceImplTest.findOne.executor": "Run",
-    "JUnit.OrderDetailRepositoryTest.findByOrderId.executor": "Run",
-    "JUnit.OrderDetailRepositoryTest.saveTest.executor": "Run",
-    "JUnit.OrderMasterRepositoryTest.findByBuyerOpenid.executor": "Debug",
-    "JUnit.OrderMasterRepositoryTest.saveTest.executor": "Run",
-    "JUnit.OrderServiceImplTest.cancel.executor": "Run",
-    "JUnit.OrderServiceImplTest.create.executor": "Run",
-    "JUnit.OrderServiceImplTest.findList.executor": "Run",
-    "JUnit.OrderServiceImplTest.findOne.executor": "Run",
-    "JUnit.OrderServiceImplTest.finish.executor": "Run",
-    "JUnit.OrderServiceImplTest.list.executor": "Debug",
-    "JUnit.OrderServiceImplTest.paid.executor": "Run",
-    "JUnit.ProductCategoryMapperTest.deleteByCategoryType.executor": "Debug",
-    "JUnit.ProductCategoryMapperTest.findByCategoryType.executor": "Run",
-    "JUnit.ProductCategoryMapperTest.insertByMap.executor": "Debug",
-    "JUnit.ProductCategoryMapperTest.insertByObject.executor": "Debug",
-    "JUnit.ProductCategoryMapperTest.selectByCategoryName.executor": "Run",
-    "JUnit.ProductCategoryMapperTest.selectByCategoryType.executor": "Debug",
-    "JUnit.ProductCategoryMapperTest.updateByCategoryType.executor": "Debug",
-    "JUnit.ProductCategoryMapperTest.updateByObject.executor": "Debug",
-    "JUnit.ProductCategoryRepositoryTest.executor": "Run",
-    "JUnit.ProductCategoryRepositoryTest.findByCategoryTypeInTest.executor": "Debug",
-    "JUnit.ProductCategoryRepositoryTest.findById.executor": "Run",
-    "JUnit.ProductCategoryRepositoryTest.findListTest.executor": "Run",
-    "JUnit.ProductCategoryRepositoryTest.saveTest.executor": "Run",
-    "JUnit.ProductInfoRepositoryTest.findByProductStatus.executor": "Run",
-    "JUnit.ProductInfoRepositoryTest.saveTest.executor": "Run",
-    "JUnit.ProductServiceImplTest.executor": "Run",
-    "JUnit.ProductServiceImplTest.findAll.executor": "Debug",
-    "JUnit.ProductServiceImplTest.findOne.executor": "Run",
-    "JUnit.ProductServiceImplTest.findUpAll.executor": "Run",
-    "JUnit.ProductServiceImplTest.save.executor": "Run",
-    "JUnit.ProductionServiceImplTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.WechatSellApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/xu/projects/wechat-sell",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CategoryServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceImplTest.findOne.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderDetailRepositoryTest.findByOrderId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderDetailRepositoryTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderMasterRepositoryTest.findByBuyerOpenid.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.OrderMasterRepositoryTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.cancel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.create.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.findList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.findOne.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.finish.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderServiceImplTest.list.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.OrderServiceImplTest.paid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.deleteByCategoryType.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.findByCategoryType.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.insertByMap.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.insertByObject.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.selectByCategoryName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.selectByCategoryType.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.updateByCategoryType.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryMapperTest.updateByObject.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryRepositoryTest.findByCategoryTypeInTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductCategoryRepositoryTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryRepositoryTest.findListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductCategoryRepositoryTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductInfoRepositoryTest.findByProductStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductInfoRepositoryTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceImplTest.findAll.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ProductServiceImplTest.findOne.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceImplTest.findUpAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductServiceImplTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductionServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.WechatSellApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xu/projects/wechat-sell&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -285,7 +288,8 @@
       <workItem from="1720925791111" duration="12158000" />
       <workItem from="1720948682565" duration="8907000" />
       <workItem from="1721003751173" duration="82627000" />
-      <workItem from="1723077339918" duration="2715000" />
+      <workItem from="1723077339918" duration="3128000" />
+      <workItem from="1723511025236" duration="3272000" />
     </task>
     <task id="LOCAL-00001" summary="-- finish category dao, service&#10;-- finish product dao, service">
       <option name="closed" value="true" />
@@ -359,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721220837229</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="--- 9.3 freemaker有问题">
+      <option name="closed" value="true" />
+      <created>1723080343012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723080343012</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +395,8 @@
     <MESSAGE value="-- 买家订单service完成" />
     <MESSAGE value="-- 买家订单部分完成&#10;-- 视频第六章结束" />
     <MESSAGE value="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- Mybatis改写一部分&#10;--- redis缓存&#10;--- redis实现分布式锁" />
+    <MESSAGE value="--- 9.3 freemaker有问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- 9.3 freemaker有问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

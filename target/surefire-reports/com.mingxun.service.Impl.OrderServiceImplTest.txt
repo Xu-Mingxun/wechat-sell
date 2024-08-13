@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.mingxun.service.Impl.OrderServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.059 s <<< FAILURE! - in com.mingxun.service.Impl.OrderServiceImplTest
+finish  Time elapsed: 0.011 s  <<< ERROR!
+com.mingxun.exception.SellException: 订单状态不正确
+	at com.mingxun.service.Impl.OrderServiceImplTest.finish(OrderServiceImplTest.java:86)
+
+paid  Time elapsed: 0.007 s  <<< ERROR!
+com.mingxun.exception.SellException: 订单状态不正确
+	at com.mingxun.service.Impl.OrderServiceImplTest.paid(OrderServiceImplTest.java:93)
+

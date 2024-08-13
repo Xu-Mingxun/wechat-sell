@@ -1,0 +1,8 @@
+com/mingxun/service/Impl/CategoryServiceImplTest.class
+com/mingxun/service/Impl/OrderServiceImplTest.class
+com/mingxun/repository/ProductInfoRepositoryTest.class
+com/mingxun/repository/ProductCategoryRepositoryTest.class
+com/mingxun/service/Impl/ProductServiceImplTest.class
+com/mingxun/WechatSellApplicationTests.class
+com/mingxun/repository/OrderMasterRepositoryTest.class
+com/mingxun/repository/OrderDetailRepositoryTest.class

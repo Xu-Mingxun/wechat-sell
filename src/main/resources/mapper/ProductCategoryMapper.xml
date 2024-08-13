@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mingxun.dataobject.mapper.ProductCategoryMapper">
+    <resultMap id="BaseResultMap" type="com.mingxun.dataobject.ProductCategory">
+        <id column="category_id" property="categoryId" jdbcType="INTEGER" />
+        <id column="category_name" property="categoryName" jdbcType="VARCHAR" />
+        <id column="category_type" property="categoryType" jdbcType="INTEGER" />
+    </resultMap>
+
+    <delete id="deleteByCategoryType" parameterType="java.lang.Integer">
+        delete
+        from product_category
+        where category_type = #{categoryType}
+    </delete>
+
+    <select id="selectByCategoryType" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select category_id, category_name, category_type
+        from product_category
+        where category_type = #{category_type, jdbcType=INTEGER}
+    </select>
+
+    <select id="selectByCategoryName" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select category_id, category_name, category_type
+        from product_category
+        where category_name = #{category_name, jdbcType=VARCHAR}
+    </select>
+    
+    <update id="updateByCategoryType">
+        UPDATE product_category
+        SET category_name = #{categoryName}
+        WHERE category_type = #{categoryType}
+    </update>
+
+    <update id="updateByObject" parameterType="com.mingxun.dataobject.ProductCategory">
+        UPDATE product_category
+        SET category_name = #{categoryName}, category_type = #{categoryType}
+        WHERE category_id = #{categoryId}
+    </update>
+
+    <insert id="insertByObject" parameterType="com.mingxun.dataobject.ProductCategory">
+        insert into product_category (category_name, category_type)
+        values(#{categoryName}, #{categoryType})
+    </insert>
+</mapper>
