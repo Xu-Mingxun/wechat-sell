@@ -1,11 +1,13 @@
 package com.mingxun.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mingxun.dataobject.OrderDetail;
 import com.mingxun.enums.OrderStatusEnum;
 import com.mingxun.enums.PayStatusEnum;
+import com.mingxun.utils.EnumUtil;
 import com.mingxun.utils.serializer.Date2LongSerializer;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -51,4 +53,14 @@ public class OrderDTO {
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
+
+    @JsonIgnore
+    public OrderStatusEnum getOrderStatusEnum() {
+        return EnumUtil.getByCode(orderStatus, OrderStatusEnum.class);
+    }
+
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum() {
+        return EnumUtil.getByCode(payStatus, PayStatusEnum.class);
+    }
 }

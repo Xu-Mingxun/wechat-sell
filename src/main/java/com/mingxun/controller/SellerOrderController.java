@@ -40,6 +40,7 @@ public class SellerOrderController {
         PageRequest request = PageRequest.of(page - 1, size);
         Page<OrderDTO> orderDTOPage = orderService.findList(request);
         map.put("orderDTOPage", orderDTOPage);
+        // orderDTOPage.getContent();
         return new ModelAndView("order/list", map);
     }
 }
