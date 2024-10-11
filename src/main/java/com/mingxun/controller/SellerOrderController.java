@@ -1,28 +1,21 @@
 package com.mingxun.controller;
 
-import com.mingxun.VO.ResultVO;
 import com.mingxun.dto.OrderDTO;
 import com.mingxun.enums.ResultEnum;
 import com.mingxun.exception.SellException;
 import com.mingxun.service.OrderService;
-import com.mingxun.utils.ResultVOResult;
-
-import java.util.Map;
-
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.weaver.ast.Or;
-import org.hibernate.criterion.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Map;
 
 /* 卖家端订单*/
 @Controller
@@ -44,8 +37,7 @@ public class SellerOrderController {
     @GetMapping("/list")
     @ResponseBody
     public ModelAndView list(@RequestParam(value = "page", defaultValue = "1") Integer page,
-                             @RequestParam(value = "size", defaultValue = "10") Integer size,
-                             Map<String, Object> map) {
+                             @RequestParam(value = "size", defaultValue = "10") Integer size, Map<String, Object> map) {
         PageRequest request = PageRequest.of(page - 1, size);
         Page<OrderDTO> orderDTOPage = orderService.findList(request);
         map.put("orderDTOPage", orderDTOPage);
@@ -56,8 +48,7 @@ public class SellerOrderController {
     }
 
     @GetMapping("/cancel")
-    public ModelAndView cancel(@RequestParam("orderId") String orderId,
-                               Map<String, Object> map) {
+    public ModelAndView cancel(@RequestParam("orderId") String orderId, Map<String, Object> map) {
         try {
             OrderDTO orderDTO = orderService.findOne(orderId);
             orderService.cancel(orderDTO);
@@ -74,8 +65,7 @@ public class SellerOrderController {
     }
 
     @GetMapping("detail")
-    public ModelAndView detail(@RequestParam("orderId") String orderId,
-                               Map<String, Object> map) {
+    public ModelAndView detail(@RequestParam("orderId") String orderId, Map<String, Object> map) {
         OrderDTO orderDTO = new OrderDTO();
         try {
             orderDTO = orderService.findOne(orderId);
@@ -91,8 +81,7 @@ public class SellerOrderController {
     }
 
     @GetMapping("/finish")
-    public ModelAndView finished(@RequestParam("orderId") String orderId,
-                                 Map<String, Object> map) {
+    public ModelAndView finished(@RequestParam("orderId") String orderId, Map<String, Object> map) {
         try {
             OrderDTO orderDTO = orderService.findOne(orderId);
             orderService.finish(orderDTO);
