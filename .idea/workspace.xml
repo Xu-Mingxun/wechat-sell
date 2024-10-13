@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="--- 9.3 freemaker有问题">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/SellerOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/SellerOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ProductStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/PayStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/PayStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +91,6 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -113,6 +127,8 @@
     "JUnit.ProductServiceImplTest.findAll.executor": "Debug",
     "JUnit.ProductServiceImplTest.findOne.executor": "Run",
     "JUnit.ProductServiceImplTest.findUpAll.executor": "Run",
+    "JUnit.ProductServiceImplTest.offSale.executor": "Run",
+    "JUnit.ProductServiceImplTest.onSale.executor": "Run",
     "JUnit.ProductServiceImplTest.save.executor": "Run",
     "JUnit.ProductionServiceImplTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -125,7 +141,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/xu/projects/wechat-sell",
+    "last_opened_file_path": "/Users/xu/projects/wechat-sell/src/main/resources/templates/product",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,7 +150,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -142,6 +158,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/product" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -154,8 +173,8 @@
       <recent name="com.mingxun.service.Impl" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.mingxun.dataobject.mapper" />
       <recent name="com.mingxun.service.Impl" />
+      <recent name="com.mingxun.dataobject.mapper" />
       <recent name="com.mingxun.repository" />
       <recent name="com.mingxun.repository.Impl" />
     </key>
@@ -193,22 +212,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCategoryMapperTest.deleteByCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wechat-sell" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mingxun.dataobject.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.dataobject.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.dataobject.mapper.ProductCategoryMapperTest" />
-      <option name="METHOD_NAME" value="deleteByCategoryType" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ProductCategoryMapperTest.insertByObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <extension name="coverage">
@@ -225,17 +228,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCategoryMapperTest.updateByObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceImplTest.offSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wechat-sell" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mingxun.dataobject.mapper.*" />
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mingxun.dataobject.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.mingxun.dataobject.mapper.ProductCategoryMapperTest" />
-      <option name="METHOD_NAME" value="updateByObject" />
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="offSale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImplTest.onSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wechat-sell" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mingxun.service.Impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mingxun.service.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.mingxun.service.Impl.ProductServiceImplTest" />
+      <option name="METHOD_NAME" value="onSale" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceImplTest.offSale" />
+        <item itemvalue="JUnit.ProductServiceImplTest.onSale" />
         <item itemvalue="JUnit.OrderServiceImplTest.list" />
         <item itemvalue="JUnit.OrderServiceImplTest.findList" />
         <item itemvalue="JUnit.ProductCategoryMapperTest.insertByObject" />
-        <item itemvalue="JUnit.ProductCategoryMapperTest.deleteByCategoryType" />
-        <item itemvalue="JUnit.ProductCategoryMapperTest.updateByObject" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +308,9 @@
       <workItem from="1723077339918" duration="3128000" />
       <workItem from="1723511025236" duration="15528000" />
       <workItem from="1725886987250" duration="1232000" />
-      <workItem from="1728525217916" duration="12930000" />
+      <workItem from="1728525217916" duration="16288000" />
+      <workItem from="1728722300039" duration="508000" />
+      <workItem from="1728722817269" duration="7741000" />
     </task>
     <task id="LOCAL-00001" summary="-- finish category dao, service&#10;-- finish product dao, service">
       <option name="closed" value="true" />

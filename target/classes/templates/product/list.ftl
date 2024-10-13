@@ -15,33 +15,37 @@
                     <table class="table table-bordered table-condensed">
                         <thead>
                         <tr>
-                            <th>订单id</th>
-                            <th>姓名</th>
-                            <th>手机号</th>
-                            <th>地址</th>
-                            <th>金额</th>
-                            <th>订单状态</th>
-                            <th>支付状态</th>
+                            <th>商品id</th>
+                            <th>名称</th>
+<#--                            <th>图片</th>-->
+                            <th>单价</th>
+                            <th>库存</th>
+                            <th>描述</th>
+                            <th>类目</th>
                             <th>创建时间</th>
+                            <th>修改时间</th>
                             <th colspan="2">操作</th>
                         </tr>
                         </thead>
                         <tbody>
 
-                        <#list orderDTOPage.content as orderDTO>
+                        <#list productDTOPage.content as productDTO>
                             <tr>
-                                <td>${orderDTO.orderId}</td>
-                                <td>${orderDTO.buyerName}</td>
-                                <td>${orderDTO.buyerPhone}</td>
-                                <td>${orderDTO.buyerAddress}</td>
-                                <td>${orderDTO.orderAmount}</td>
-                                <td>${orderDTO.getOrderStatusEnum().message}</td>
-                                <td>${orderDTO.getPayStatusEnum().message}</td>
-                                <td>${orderDTO.createTime}</td>
-                                <td><a href="/wechat-sell/seller/order/detail?orderId=${orderDTO.orderId}">详情</a></td>
+                                <td>${productDTO.productId}</td>
+                                <td>${productDTO.productName}</td>
+<#--                                <td>${productDTO.productIcon}</td>-->
+                                <td>${productDTO.productPrice}</td>
+                                <td>${productDTO.productStock}</td>
+                                <td>${productDTO.productDescription}</td>
+                                <td>${productDTO.categoryType}</td>
+                                <td>${productDTO.createTime}</td>
+                                <td>${productDTO.updateTime}</td>
+                                <td><a href="/wechat-sell/seller/product/index?productId=${productDTO.productId}">修改</a></td>
                                 <td>
-                                    <#if orderDTO.getOrderStatusEnum().message == "新订单">
-                                        <a href="/wechat-sell/seller/order/cancel?orderId=${orderDTO.orderId}">取消</a>
+                                    <#if productDTO.getProductStatusEnum().message == "在架">
+                                        <a href="/wechat-sell/seller/product/off_sale?productId=${productDTO.productId}">下架</a>
+                                    <#else>
+                                        <a href="/wechat-sell/seller/product/on_sale?productId=${productDTO.productId}">上架</a>
                                     </#if>
                                 </td>
                             </tr>
@@ -59,7 +63,7 @@
                             <li><a href="/wechat-sell/seller/order/list?page=${currentPage - 1}&size=${size}">上一页</a></li>
                         </#if>
 
-                        <#list 1..orderDTOPage.getTotalPages() as index>
+                        <#list 1..productDTOPage.getTotalPages() as index>
                             <#if currentPage == index>
                                 <li class="disabled"><a href="#">${index}</a></li>
                             <#else>
@@ -67,7 +71,7 @@
                             </#if>
                         </#list>
 
-                        <#if currentPage gte orderDTOPage.getTotalPages()>
+                        <#if currentPage gte productDTOPage.getTotalPages()>
                             <li class="disabled"><a href="#">下一页</a></li>
                         <#else>
                             <li><a href="/wechat-sell/seller/order/list?page=${currentPage + 1}&size=${size}">下一页</a></li>
