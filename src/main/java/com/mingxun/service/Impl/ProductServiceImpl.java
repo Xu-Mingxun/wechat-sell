@@ -7,15 +7,13 @@ import com.mingxun.enums.ResultEnum;
 import com.mingxun.exception.SellException;
 import com.mingxun.repository.ProductInfoRepository;
 import com.mingxun.service.ProductService;
-import java.util.List;
-import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PutMapping;
+
+import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -87,7 +85,7 @@ public class ProductServiceImpl implements ProductService {
             throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
         }
         if (productInfo.getProductStatusEnum() == ProductStatusEnum.UP) {
-            throw  new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
+            throw new SellException(ResultEnum.PRODUCT_STATUS_ERROR);
         }
 
         // 更新

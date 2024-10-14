@@ -1,11 +1,11 @@
 package com.mingxun.dataobject;
 
-import javax.persistence.*;
-import javax.sql.DataSource;
-import java.util.Date;
 import lombok.Data;
-import net.bytebuddy.asm.Advice;
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
+
+import javax.persistence.*;
+import java.util.Date;
 
 // 类目
 /*  数据库表名为product_category
@@ -17,16 +17,23 @@ import org.hibernate.annotations.DynamicUpdate;
 @DynamicUpdate
 // lombok包，Data生成getter，setter，Tostring
 @Data
+@DynamicInsert
 public class ProductCategory {
     // 命名方式都是将下划线改为大写
 //    类目id
     @Id
-    @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer categoryId;
-//    类目名字
+    //    类目名字
     private String categoryName;
-//    类目编号
+    //    类目编号
     private Integer categoryType;
+
+    // 创建时间
+    private Date createTime;
+
+    // 修改时间
+    private Date updateTime;
 
     public ProductCategory(String categoryName, Integer categoryType) {
         this.categoryName = categoryName;

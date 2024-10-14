@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0f2197b-2230-4510-9bdf-2c5ce5ce1b42" name="Changes" comment="--- 9.3 freemaker有问题">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/SellerProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/controller/SellerProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/dataobject/ProductInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ProductStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ProductStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mingxun/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mingxun/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/error.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/success.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/detail.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order/list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mingxun/service/Impl/ProductServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/PayStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/PayStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/controller/SellerProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mingxun/service/Impl/ProductServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order/list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common/error.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common/error.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +133,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/xu/projects/wechat-sell/src/main/resources/templates/product",
+    "last_opened_file_path": "/Users/xu/projects/wechat-sell/src/main/resources/templates/category",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,6 +151,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/category" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/product" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -310,7 +303,9 @@
       <workItem from="1725886987250" duration="1232000" />
       <workItem from="1728525217916" duration="16288000" />
       <workItem from="1728722300039" duration="508000" />
-      <workItem from="1728722817269" duration="7741000" />
+      <workItem from="1728722817269" duration="8192000" />
+      <workItem from="1728854205143" duration="4240000" />
+      <workItem from="1728858462487" duration="5963000" />
     </task>
     <task id="LOCAL-00001" summary="-- finish category dao, service&#10;-- finish product dao, service">
       <option name="closed" value="true" />
@@ -423,24 +418,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/service/Impl/ProductServiceImpl.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mingxun/dataobject/mapper/ProductCategoryMapperTest.java</url>
           <line>86</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/WechatSellApplication.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/mingxun/controller/SellerProductController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

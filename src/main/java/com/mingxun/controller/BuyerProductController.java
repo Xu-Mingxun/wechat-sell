@@ -8,10 +8,6 @@ import com.mingxun.dataobject.ProductInfo;
 import com.mingxun.service.CategoryService;
 import com.mingxun.service.Impl.ProductServiceImpl;
 import com.mingxun.utils.ResultVOResult;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -21,18 +17,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController
 @RequestMapping("/buyer/product")
 public class BuyerProductController {
 
     private final ProductServiceImpl productServiceImpl;
+    @Autowired
+    private CategoryService categoryService;
 
     public BuyerProductController(ProductServiceImpl productServiceImpl) {
         this.productServiceImpl = productServiceImpl;
     }
-
-    @Autowired
-    private CategoryService categoryService;
 
     @GetMapping("/list")
     @Cacheable(cacheNames = "product", key = "#sellerId")
@@ -50,7 +49,7 @@ public class BuyerProductController {
 //        }
 
         // 简洁方法
-        List<Integer> categoryTypeList =  productInfoList.stream()
+        List<Integer> categoryTypeList = productInfoList.stream()
                 .map(e -> e.getCategoryType())
                 .collect(Collectors.toList());
         List<ProductCategory> productCategoryList = categoryService.findByCategoryTypeIn(categoryTypeList);
@@ -63,7 +62,7 @@ public class BuyerProductController {
             productVO.setCategoryName(productCategory.getCategoryName());
 
             List<ProductInfoVO> productInfoVOList = new ArrayList<>();
-            for (ProductInfo productInfo : productInfoList){
+            for (ProductInfo productInfo : productInfoList) {
                 if (productInfo.getCategoryType().equals(productCategory.getCategoryType())) {
                     // 简洁的使用BeanUtil进行拷贝
                     ProductInfoVO productInfoVO = new ProductInfoVO();

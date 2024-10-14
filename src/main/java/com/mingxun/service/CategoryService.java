@@ -1,6 +1,7 @@
 package com.mingxun.service;
 
 import com.mingxun.dataobject.ProductCategory;
+
 import java.util.List;
 
 public interface CategoryService {

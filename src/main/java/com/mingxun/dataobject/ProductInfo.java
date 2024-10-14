@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mingxun.enums.ProductStatusEnum;
 import com.mingxun.utils.EnumUtil;
 import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.Entity;
@@ -17,6 +18,7 @@ import java.util.Date;
 @Data
 @Table(name = "product_info")
 @DynamicUpdate
+@DynamicInsert
 public class ProductInfo implements Serializable {
 
     private static final long serialVersionUID = 1808023597601707381L;
@@ -31,7 +33,7 @@ public class ProductInfo implements Serializable {
     private BigDecimal productPrice;
 
     /* 库存*/
-    private Integer productStock;
+    private Integer productStock = ProductStatusEnum.UP.getCode();
 
     /* 描述*/
     private String productDescription;
